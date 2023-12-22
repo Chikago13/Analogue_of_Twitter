@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import PageStatistic, Notification
+
+admin.site.register(PageStatistic),
+admin.site.register(Notification)
