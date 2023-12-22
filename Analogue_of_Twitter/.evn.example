@@ -1,7 +1,0 @@
-SECRET_KEY='django-insecure-ykbvrs7kw^%u&uzoap^r)=@!0_z+4l3*@rc_m$4j5zp+ofxkfm'
-
-POSTGRES_DB=db
-POSTGRES_HOST=db
-POSTGRES_PORT=5432
-POSTGRES_USER=admin
-POSTGRES_PASSWORD=qwerty123
