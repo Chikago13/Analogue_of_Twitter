@@ -35,6 +35,7 @@ INSTALLED_APPS = [
         ],
         *["user", "post", "page", "statistic"],
         *["rest_framework"],
+
 ]
 
 MIDDLEWARE = [
@@ -134,3 +135,9 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = "user.User"
+
+CELERY_BROKER_URL = 'amqp://guest:guest@localhost:5672/'
+CELERY_RESULT_BACKEND = 'django-db'
+CELERY_ACCEPT_CONTENT = ['application/json']
+CELERY_RESULT_SERIALIZER = 'json'
+CELERY_TASK_SERIALIZER = 'json'
